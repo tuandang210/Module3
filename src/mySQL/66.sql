@@ -14,5 +14,4 @@ UPDATE student SET ClassId = 2 WHERE StudentName='Hung';
 
 SELECT s.StudentName, s2.SubName, m.Mark
 FROM student s JOIN mark m on s.StudentId = m.StudentId join subject s2 on s2.SubId = m.SubId
-GROUP BY Mark, StudentName
-ORDER BY Mark DESC , StudentName;
+ORDER BY Mark DESC , StudentName ASC ;
